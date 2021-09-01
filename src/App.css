@@ -6,10 +6,19 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+#site-container {
+  width: 80%;
+  margin: auto;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width: 200px) {
+  #site-container {
+    width: 100%;
+    margin: auto;
   }
 }
 

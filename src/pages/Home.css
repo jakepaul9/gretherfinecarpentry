@@ -1,0 +1,86 @@
+.home-container {
+  margin: auto;
+  /* margin-top: 180px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  overflow: auto;
+  /* background-color: white; */
+  /* background: rgba(3, 3, 3, 0.4); */
+}
+#logo {
+  max-width: 400px;
+}
+#learn-more {
+  background-color: #40b454;
+  border: none;
+  color: white;
+  height: 50px;
+  font-size: 14pt;
+  width: 200px;
+}
+form {
+  color: white;
+}
+fieldset {
+  width: auto;
+  /* padding: 20px; */
+  /* border: 1px solid white; */
+}
+#mobile-quote-request {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #40b454;
+  font-size: 16pt;
+  justify-content: center;
+  border: 1px solid #40b454;
+  border-radius: 10px;
+}
+#mobile-quote-title {
+  display: inline-block;
+  width: 100%;
+}
+#phone-quote {
+  width: 35%;
+}
+#phone-quote a {
+  color: #40b454;
+  font-size: 30pt;
+}
+#form-quote {
+  width: 35%;
+}
+#form-quote span {
+  color: #40b454;
+  font-size: 30pt;
+}
+.home-msg {
+  font-family: fantasy;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 24pt;
+  line-height: 40pt;
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+    width: 200px;
+  }
+  .home-msg {
+    font-family: fantasy;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    font-size: 14pt;
+    line-height: 40pt;
+  }
+}
