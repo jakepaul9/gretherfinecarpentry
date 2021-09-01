@@ -17,6 +17,7 @@ img {
 }
 .nav-link {
   color: rgb(35, 36, 36) !important;
+  padding-left: 30px !important;
 }
 .nav-links:hover {
   text-decoration: none;
