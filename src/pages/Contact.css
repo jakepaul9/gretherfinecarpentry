@@ -109,6 +109,6 @@ label {
   }
   .contact-container {
     background-position: right;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
 }
