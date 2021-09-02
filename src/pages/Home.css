@@ -19,7 +19,7 @@
   max-width: 400px;
 }
 .home-layer {
-  background-color: rgba(32, 32, 32, 0.4);
+  /* background-color: rgba(32, 32, 32, 0.4); */
   /* padding-top: 100px; */
   position: relative;
   top: 0;
@@ -44,60 +44,75 @@ fieldset {
   /* padding: 20px; */
   /* border: 1px solid white; */
 }
-#mobile-quote-request {
-  text-align: center;
-  margin: auto;
-  margin-top: 30px;
-  width: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  color: white;
-  font-size: 16pt;
-  justify-content: center;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding-bottom: 10px;
-}
-#mobile-quote-title {
-  display: inline-block;
-  width: 100%;
-}
-#phone-quote {
-  width: 35%;
-}
-#phone-quote a {
-  color: #40b454;
-  font-size: 30pt;
-}
-#form-quote {
-  width: 35%;
-}
-#form-quote span {
-  color: #40b454;
-  font-size: 30pt;
-}
-.home-msg {
-  font-family: URW Chancery L, cursive;
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  font-size: 24pt;
-  line-height: 40pt;
-  color: white;
-}
 
-@media only screen and (max-width: 600px) {
-  #logo {
-    width: 200px;
-  }
+.home-msg {
+  visibility: hidden;
+  /* margin: -12px; */
+}
+#mobile-quote-request {
+  visibility: hidden !important;
+}
+/* @media only screen and (max-width: 1000px) {
   .home-msg {
+    visibility: visible !important;
+    font-size: 36pt !important;
+    line-height: 48pt;
+    color: white;
     font-family: URW Chancery L, cursive;
     width: 70%;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 18pt;
+  }
+} */
+@media only screen and (max-width: 750px) {
+  #logo {
+    width: 200px;
+  }
+  .home-msg {
+    visibility: visible !important;
+    color: white;
+    font-family: URW Chancery L, cursive;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18pt !important;
     line-height: 40pt;
+  }
+  #mobile-quote-request {
+    visibility: visible !important;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 16pt;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+  }
+  #mobile-quote-title {
+    display: inline-block;
+    width: 100%;
+  }
+  #phone-quote {
+    width: 35%;
+  }
+  #phone-quote a {
+    color: #40b454;
+    font-size: 30pt;
+  }
+  #form-quote {
+    width: 35%;
+  }
+  #form-quote span {
+    color: #40b454;
+    font-size: 30pt;
   }
 }
