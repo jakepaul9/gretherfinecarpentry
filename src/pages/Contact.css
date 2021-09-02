@@ -1,26 +1,36 @@
 label {
   color: black;
 }
-
+.contact-container {
+  background-image: url('../assets/images/slideImages/20191016_161420.jpg');
+  background-size: cover;
+}
+.contact-title {
+  font-size: 36pt;
+  color: white;
+  width: 100%;
+  padding: 20px 60px 60px 60px;
+}
 .contact-form {
   width: 60%;
-  padding-top: 50px;
+  padding-top: 20px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+
   /* border: 1px solid black; */
 }
 .contact-form div {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 .contact-form label {
   text-align: left;
-  color: black;
+  color: white;
   font-size: 18pt;
 }
 .contact-form div input {
@@ -31,6 +41,9 @@ label {
   width: 200px;
   font-size: 24pt;
   padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
 }
 .side-by-side {
   flex-direction: row !important;
@@ -45,19 +58,31 @@ label {
 
 @media only screen and (max-width: 600px) {
   .contact-form {
-    width: 95%;
+    width: 90%;
+    /* background-color: #40b454; */
+  }
+  .contact-title {
+    font-size: 24pt;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    color: white;
+    padding-left: 20px;
   }
   label {
     font-size: 14pt !important;
+    color: white !important;
   }
   input {
     font-size: 14pt !important;
   }
   .date {
     font-size: 16pt !important;
-    width: 40% !important;
+    width: 45% !important;
   }
   .budget {
     width: 50% !important;
+  }
+  .submit-btn {
+    font-weight: bold;
   }
 }

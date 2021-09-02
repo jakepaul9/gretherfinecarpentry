@@ -63,7 +63,7 @@ fieldset {
   font-size: 30pt;
 }
 .home-msg {
-  font-family: fantasy;
+  font-family: URW Chancery L, cursive;
   width: 60%;
   margin: auto;
   text-align: center;
@@ -76,11 +76,11 @@ fieldset {
     width: 200px;
   }
   .home-msg {
-    font-family: fantasy;
-    width: 60%;
+    font-family: URW Chancery L, cursive;
+    width: 70%;
     margin: auto;
     text-align: center;
-    font-size: 14pt;
+    font-size: 20pt;
     line-height: 40pt;
   }
 }

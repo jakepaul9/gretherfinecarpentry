@@ -22,37 +22,43 @@ export default function Contact() {
   }
 
   return (
-    <form onSubmit={sendEmail}>
-      <div className='contact-form'>
-        <input type='hidden' name='contact_number' />
-        <div>
-          <label>Name</label>
-          <input type='text' name='from_name' />
-        </div>
-        <div>
-          <label>Phone</label>
-          <input type='tel' name='from_phone' />
-        </div>
-        <div>
-          <label>Email</label>
-          <input type='email' name='from_email' />
-        </div>
-        <div className='side-by-side'>
-          <div className='budget'>
-            <label>Budget</label>
-            <input type='text' name='budget' />
+    <div className='contact-container'>
+      <div className='layer'>
+        <div className='contact-title'>Contact Us</div>
+
+        <form onSubmit={sendEmail}>
+          <div className='contact-form'>
+            <input type='hidden' name='contact_number' />
+            <div>
+              <label>Name</label>
+              <input type='text' name='from_name' />
+            </div>
+            <div>
+              <label>Phone</label>
+              <input type='tel' name='from_phone' />
+            </div>
+            <div>
+              <label>Email</label>
+              <input type='email' name='from_email' />
+            </div>
+            <div className='side-by-side'>
+              <div className='budget'>
+                <label>Budget</label>
+                <input type='text' name='budget' />
+              </div>
+              <div className='date'>
+                <label>Deadline</label>
+                <input type='date' name='doc' pattern='\d{4}-\d{2}-\d{2}' />
+              </div>
+            </div>
+            <div>
+              <label>Description</label>
+              <textarea name='message' rows='3' />
+            </div>
+            <input className='submit-btn' type='submit' value='Send' />
           </div>
-          <div className='date'>
-            <label>Deadline</label>
-            <input type='date' name='doc' pattern='\d{4}-\d{2}-\d{2}' />
-          </div>
-        </div>
-        <div>
-          <label>Description</label>
-          <textarea name='message' rows='5' />
-        </div>
-        <input className='submit-btn' type='submit' value='Send' />
+        </form>
       </div>
-    </form>
+    </div>
   )
 }
