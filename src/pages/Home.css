@@ -66,6 +66,12 @@ fieldset {
     text-align: center;
   }
 } */
+@media only screen and (min-width: 1000px) {
+  .home-msg {
+    margin: -12px;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   #logo {
     width: 200px;
