@@ -36,7 +36,7 @@ const MainNav = () => {
             <Nav.Link
               as={NavLink}
               className='nav-link'
-              to='/About'
+              to='/about'
               onClick={() => setExpanded(false)}
             >
               About
@@ -44,7 +44,7 @@ const MainNav = () => {
             <Nav.Link
               as={NavLink}
               className='nav-link'
-              to='/Services'
+              to='/services'
               onClick={() => setExpanded(false)}
             >
               Services
@@ -52,7 +52,7 @@ const MainNav = () => {
             <Nav.Link
               as={NavLink}
               className='nav-link'
-              to='/Contact'
+              to='/contact'
               onClick={() => setExpanded(false)}
             >
               Contact

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Redirect } from 'react-router-dom'
+import { HashRouter, Route } from 'react-router-dom'
 
 //Custom Components
 import Home from './pages/Home'
@@ -18,20 +18,12 @@ const App = () => {
         <MainNav />
         <div id='site-container'>
           {/* <Switch> */}
-          <Route path='/' exact>
-            <Home></Home>
-          </Route>
-          <Route path='/About'>
-            <About></About>
-          </Route>
-          <Route path='/Services'>
-            <Services></Services>
-          </Route>
-          <Route path='/Contact'>
-            <Contact></Contact>
-          </Route>
+          <Route path='/' exact render={(props) => <Home {...props} />} />
+          <Route path='/about' render={(props) => <About {...props} />} />
+          <Route path='/services' render={(props) => <Services {...props} />} />
+          <Route path='/contact' render={(props) => <Contact {...props} />} />
 
-          <Redirect to='/' />
+          {/* <Redirect to='/' /> */}
           {/* </Switch> */}
         </div>
       </div>
