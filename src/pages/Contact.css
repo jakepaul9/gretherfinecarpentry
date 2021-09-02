@@ -19,6 +19,8 @@ label {
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
 
   /* border: 1px solid black; */
 }
@@ -55,18 +57,30 @@ label {
   flex-direction: column;
   margin-bottom: 0px;
 }
+.address {
+  text-align: center;
+  font-size: 24pt;
+  margin: 50px;
+  color: white;
+}
 
 @media only screen and (max-width: 600px) {
   .contact-form {
     width: 90%;
+    border: 1px solid white;
+    border-radius: 5px;
     /* background-color: #40b454; */
   }
   .contact-title {
     font-size: 24pt;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     color: white;
     padding-left: 20px;
+  }
+  .address {
+    margin-bottom: 40px;
+    font-size: 18pt;
   }
   label {
     font-size: 14pt !important;
@@ -78,6 +92,9 @@ label {
   .date {
     font-size: 16pt !important;
     width: 45% !important;
+  }
+  .date input {
+    height: 38px;
   }
   .budget {
     width: 50% !important;

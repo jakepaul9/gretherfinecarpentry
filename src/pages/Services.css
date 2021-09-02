@@ -20,6 +20,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 20px;
 }
 .owner-img {
   margin: auto;
@@ -39,8 +40,8 @@ ul {
   }
   ul {
     margin: 10px;
-    font-size: 14pt;
-    line-height: 24pt;
+    font-size: 16pt;
+    line-height: 30pt;
   }
   li {
     margin-bottom: 20px;

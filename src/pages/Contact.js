@@ -19,6 +19,12 @@ export default function Contact() {
         console.log(error.text)
       }
     )
+    alert('Your message has been sent!')
+    let inputs = document.getElementsByTagName('input')
+    document.getElementById('msg').value = ''
+    for (let i = 0; i < inputs.length - 1; i++) {
+      inputs[i].value = ''
+    }
   }
 
   return (
@@ -44,7 +50,7 @@ export default function Contact() {
             <div className='side-by-side'>
               <div className='budget'>
                 <label>Budget</label>
-                <input type='text' name='budget' />
+                <input type='number' name='budget' />
               </div>
               <div className='date'>
                 <label>Deadline</label>
@@ -53,11 +59,16 @@ export default function Contact() {
             </div>
             <div>
               <label>Description</label>
-              <textarea name='message' rows='3' />
+              <textarea id='msg' name='message' rows='3' />
             </div>
             <input className='submit-btn' type='submit' value='Send' />
           </div>
         </form>
+        <div className='address'>
+          Grether Fine Carpentry
+          <br /> 562 Parsons Dr. Suite 115
+          <br /> Medford, OR 97501
+        </div>
       </div>
     </div>
   )
