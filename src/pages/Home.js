@@ -14,11 +14,13 @@ import './Home.css'
 const Home = (props) => {
   return (
     <div className='home-container'>
-      <MainCarousel />
       <MobileView>
         <div className='home-msg'>
           Providing quality craftmanship to the Rogue Valley since 2006
         </div>
+      </MobileView>
+      <MainCarousel />
+      <MobileView>
         <div id='mobile-quote-request'>
           <span id='mobile-quote-title'>Request A Quote</span>
           <div id='phone-quote'>
