@@ -60,7 +60,7 @@ export default function Contact() {
               </div>
               <div>
                 <label>Description</label>
-                <textarea id='msg' name='message' />
+                <textarea id='msg' rows='5' name='message' />
               </div>
               <input className='submit-btn' type='submit' value='Send' />
             </div>

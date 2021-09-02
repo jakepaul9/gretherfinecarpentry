@@ -17,14 +17,10 @@ const App = () => {
       <div className='site-bground'>
         <MainNav />
         <div id='site-container'>
-          {/* <Switch> */}
           <Route path='/' exact render={(props) => <Home {...props} />} />
           <Route path='/about' render={(props) => <About {...props} />} />
           <Route path='/services' render={(props) => <Services {...props} />} />
           <Route path='/contact' render={(props) => <Contact {...props} />} />
-
-          {/* <Redirect to='/' /> */}
-          {/* </Switch> */}
         </div>
       </div>
     </HashRouter>
