@@ -56,6 +56,7 @@ fieldset {
   justify-content: center;
   border: 1px solid white;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 #mobile-quote-title {
   display: inline-block;
@@ -94,7 +95,7 @@ fieldset {
     width: 70%;
     margin: auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 18pt;
     line-height: 40pt;

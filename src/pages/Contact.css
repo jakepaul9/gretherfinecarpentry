@@ -102,7 +102,7 @@ label {
     height: 38px;
   }
   .budget {
-    width: 50% !important;
+    /* width: 50% !important; */
   }
   .submit-btn {
     font-weight: bold;
