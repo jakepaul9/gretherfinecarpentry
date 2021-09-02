@@ -14,29 +14,31 @@ import './Home.css'
 const Home = (props) => {
   return (
     <div className='home-container'>
-      <MobileView>
-        <div className='home-msg'>
-          Providing quality craftmanship to the Rogue Valley since 2006
-        </div>
-      </MobileView>
-      <MainCarousel />
-      <MobileView>
-        <div id='mobile-quote-request'>
-          <span id='mobile-quote-title'>Request A Quote</span>
-          <div id='phone-quote'>
-            <a href='tel:+1-541-450-1805'>
-              <TelephoneFill />
-            </a>
+      <div className='home-layer'>
+        <MobileView>
+          <div className='home-msg'>
+            Providing quality craftmanship to the Rogue Valley since 2006
           </div>
-          <div id='form-quote'>
-            <Link to='/Contact'>
-              <span>
-                <EnvelopeFill />
-              </span>
-            </Link>
+        </MobileView>
+        <MainCarousel />
+        <MobileView>
+          <div id='mobile-quote-request'>
+            <span id='mobile-quote-title'>Request A Quote</span>
+            <div id='phone-quote'>
+              <a href='tel:+1-541-450-1805'>
+                <TelephoneFill />
+              </a>
+            </div>
+            <div id='form-quote'>
+              <Link to='/Contact'>
+                <span>
+                  <EnvelopeFill />
+                </span>
+              </Link>
+            </div>
           </div>
-        </div>
-      </MobileView>
+        </MobileView>
+      </div>
     </div>
   )
 }
