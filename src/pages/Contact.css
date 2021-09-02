@@ -65,6 +65,10 @@ label {
   margin: 50px;
   color: white;
 }
+text-area {
+  width: 90%;
+  min-height: 50px;
+}
 
 @media only screen and (max-width: 600px) {
   .contact-form {
