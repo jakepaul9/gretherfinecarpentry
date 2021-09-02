@@ -4,6 +4,8 @@ label {
 .contact-container {
   background-image: url('../assets/images/slideImages/20191016_161420.jpg');
   background-size: cover;
+  background-position: right;
+  /* background-attachment: fixed; */
 }
 .contact-title {
   font-size: 36pt;
@@ -104,5 +106,9 @@ label {
   }
   .submit-btn {
     font-weight: bold;
+  }
+  .contact-container {
+    background-position: right;
+    background-attachment: fixed;
   }
 }

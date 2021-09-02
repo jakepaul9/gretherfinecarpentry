@@ -38,9 +38,7 @@ ul {
     font-size: 24pt;
     padding-left: 20px;
   }
-  .services-container {
-    background-size: cover !important;
-  }
+
   ul {
     margin: 10px;
     font-size: 16pt;
@@ -54,6 +52,7 @@ ul {
   }
   .services-container {
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-size: cover !important;
   }
 }
