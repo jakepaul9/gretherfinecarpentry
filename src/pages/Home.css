@@ -38,10 +38,10 @@ fieldset {
   width: 200px;
   display: flex;
   flex-wrap: wrap;
-  color: #40b454;
+  color: white;
   font-size: 16pt;
   justify-content: center;
-  border: 1px solid #40b454;
+  border: 1px solid white;
   border-radius: 10px;
 }
 #mobile-quote-title {
@@ -69,6 +69,7 @@ fieldset {
   text-align: center;
   font-size: 24pt;
   line-height: 40pt;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {

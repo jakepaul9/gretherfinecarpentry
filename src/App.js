@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Redirect,
-  Switch
+  Switch,
 } from 'react-router-dom'
 
 //Custom Components
@@ -19,25 +19,26 @@ import './App.css'
 const App = () => {
   return (
     <Router>
-      <div id='site-container'>
+      <div className='site-bground'>
         <MainNav />
+        <div id='site-container'>
+          <Switch>
+            <Route path='/' exact>
+              <Home></Home>
+            </Route>
+            <Route path='/About' exact>
+              <About></About>
+            </Route>
+            <Route path='/Services' exact>
+              <Services></Services>
+            </Route>
+            <Route path='/Contact' exact>
+              <Contact></Contact>
+            </Route>
 
-        <Switch>
-          <Route path='/' exact>
-            <Home></Home>
-          </Route>
-          <Route path='/About' exact>
-            <About></About>
-          </Route>
-          <Route path='/Services' exact>
-            <Services></Services>
-          </Route>
-          <Route path='/Contact' exact>
-            <Contact></Contact>
-          </Route>
-
-          <Redirect to='/' />
-        </Switch>
+            <Redirect to='/' />
+          </Switch>
+        </div>
       </div>
     </Router>
   )

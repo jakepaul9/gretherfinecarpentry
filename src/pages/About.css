@@ -12,6 +12,10 @@
   width: 100%;
   padding: 20px 60px 60px 60px;
 }
+.under {
+  width: 80% !important;
+  margin: auto;
+}
 .layer {
   background-color: rgba(32, 32, 32, 0.5);
   padding-top: 100px;
@@ -33,6 +37,7 @@ p {
   font-size: 20pt;
   color: white;
   line-height: 50pt;
+  /* width: 100%; */
 }
 @media only screen and (max-width: 800px) and (min-width: 200px) {
   p {
