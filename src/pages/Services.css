@@ -39,7 +39,7 @@ ul {
     padding-left: 20px;
   }
   .services-container {
-    min-height: 780px !important;
+    background-size: cover !important;
   }
   ul {
     margin: 10px;
