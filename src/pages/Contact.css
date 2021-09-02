@@ -71,6 +71,9 @@ label {
     border-radius: 5px;
     /* background-color: #40b454; */
   }
+  .under {
+    width: 100% !important;
+  }
   .contact-title {
     font-size: 24pt;
     margin-bottom: 20px;
